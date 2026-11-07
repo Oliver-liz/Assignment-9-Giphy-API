@@ -5,7 +5,7 @@ const gifContainer = document.querySelector("#gif-container");
 const button = document.querySelector("#fetch-gif-btn");
 const searchInput = document.querySelector("#search-input");
 
-const apiKey = "YOUR_API_KEY";
+const apiKey = "Wh4Mr4lxJi3VflTenrsVdIxU9p06xtnK";
 
 button.addEventListener("click", async function () {
     const searchTerm = searchInput.value.trim();
