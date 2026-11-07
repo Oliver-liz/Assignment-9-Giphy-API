@@ -8,7 +8,11 @@ const searchInput = document.querySelector("#search-input");
 const apiKey = "YOUR_API_KEY";
 
 button.addEventListener("click", async function () {
-    const searchTerm = searchInput.value;
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm === "") {
+    alert("Please enter something to search for.");
+    return;
+    }
 
     const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURIComponent(searchTerm)}&limit=8`;
 
